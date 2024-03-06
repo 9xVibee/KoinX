@@ -17,7 +17,7 @@ const TrendingCoins = () => {
       <div className="w-full flex flex-col gap-2">
         {trendingCoins.map((item) => {
           return (
-            <div className="flex justify-between">
+            <div className="flex justify-between" key={item.id}>
               <div className="flex gap-2 items-center text-[0.8rem] font-semibold">
                 <img src={item.small} alt="" className="w-4 h-4" />
                 <p>
