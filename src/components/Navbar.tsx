@@ -2,7 +2,7 @@ import { Menu } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="w-full flex overflow-hidden py-4 px-2 sm:px-8 md:px-10 justify-between items-center shadow-md">
+    <div className="w-full flex bg-white overflow-hidden py-4 px-2 sm:px-8 md:px-10 justify-between items-center shadow-md">
       {/* left */}
       <div>logo</div>
       {/* right */}
