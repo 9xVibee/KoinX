@@ -5,7 +5,7 @@ import TrendingCoins from "./TrendingCoins";
 const RightSection = () => {
   return (
     <div className="md:w-[25%] rounded-md flex flex-col gap-4">
-      <div className=" bg-blue-700 w-full py-6 pb-10 rounded-2xl flex flex-col items-center px-10 text-white gap-4">
+      <div className=" bg-blue-700 w-full py-4 md:py-6 pb-6 md:pb-10 rounded-2xl flex flex-col items-center px-2 sm:px-4 md:px-10 text-white gap-4">
         <h1 className="text-xl text-center font-semibold">
           Get Started with KoinX <br /> for FREE
         </h1>

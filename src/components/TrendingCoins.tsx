@@ -6,16 +6,15 @@ const TrendingCoins = () => {
     useTrendingCoins();
 
   useEffect(() => {
-    // Todo: Fetch data
     getTopThreeTrendingCoins();
   }, []);
 
   if (loading) return <h1>Loading...</h1>;
 
   return (
-    <div className="w-full p-4 bg-white rounded-2xl flex flex-col gap-4">
+    <div className="w-full p-4 bg-white rounded-md flex flex-col gap-4">
       <h1 className="text-xl font-bold">Trending Coins (24h)</h1>
-      <div className="w-full flex flex-col gap-1">
+      <div className="w-full flex flex-col gap-2">
         {trendingCoins.map((item) => {
           return (
             <div className="flex justify-between">

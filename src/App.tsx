@@ -5,9 +5,9 @@ import RightSection from "./components/RightSection";
 
 const App = () => {
   return (
-    <div className="w-full bg-gray-100">
+    <div className="w-full bg-gray-200">
       <Navbar />
-      <div className="flex flex-col px-8">
+      <div className="flex flex-col px-3 md:px-8">
         <p className="flex items-center text-[0.9rem] text-gray-600 py-4 gap-1">
           Cryptocurrencies{" "}
           <MdKeyboardDoubleArrowRight className="size-5 mt-0.5" />
