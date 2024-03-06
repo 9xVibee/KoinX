@@ -1,6 +1,7 @@
 import Chart from "./Chart";
 import MiniNav from "./MiniNav";
 import Performance from "./Performance";
+import Sentiment from "./Sentiment";
 
 const LeftSection = () => {
   return (
@@ -8,6 +9,7 @@ const LeftSection = () => {
       <Chart />
       <MiniNav />
       <Performance />
+      <Sentiment />
     </div>
   );
 };

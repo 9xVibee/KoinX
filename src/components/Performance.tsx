@@ -4,7 +4,7 @@ import Fundamentals from "./Fundamentals";
 
 const Performance = () => {
   return (
-    <div className="w-full flex flex-col h-fit p-6 gap-6 bg-white rounded-md">
+    <div className="w-full flex flex-col h-fit p-3 md:p-6 gap-6 bg-white rounded-md">
       <h1 className="text-2xl font-semibold">Performance</h1>
       <HighLowComp
         lowTitle="Today's Low"

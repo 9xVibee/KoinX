@@ -24,7 +24,7 @@ const HighLowComp = ({
       <div className="flex-1 relative">
         <div className="w-full h-1 rounded-full bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
         {showArrow && (
-          <div className="absolute flex items-center flex-col right-32">
+          <div className="absolute flex items-center flex-col right-[10%] md:right-[20%]">
             <ChevronUp className="size-4 text-black" strokeWidth={3} />
             <p className="text-xs font-semibold text-gray-600">$48,637.83</p>
           </div>
@@ -34,7 +34,6 @@ const HighLowComp = ({
         <p className="text-xs">{highTitle}</p>
         <p className="font-semibold text-[0.9rem]">{highPrice}</p>
       </div>
-      
     </div>
   );
 };
