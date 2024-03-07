@@ -1,5 +1,3 @@
-import React from "react";
-
 const cards = [
   {
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzbVxUnQFJ6Zd1__JW7F9vl8hTLDtTnK-Bew&usqp=CAU",
