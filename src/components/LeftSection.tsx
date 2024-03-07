@@ -17,7 +17,8 @@ const LeftSection = () => {
       <Sentiment />
       <AboutBitcoin />
       <Tokenomics />
-      <YouMayAlsoLike />
+      <YouMayAlsoLike title="You May Also Like" />
+      <YouMayAlsoLike title="Trending Coins" />
     </div>
   );
 };

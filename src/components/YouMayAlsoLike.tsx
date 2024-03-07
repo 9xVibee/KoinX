@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const YouMayAlsoLike = () => {
+const YouMayAlsoLike = ({ title }: { title: string }) => {
   const { getTopThreeTrendingCoins, loading, trendingCoins } =
     useTrendingCoins();
 
@@ -22,7 +22,7 @@ const YouMayAlsoLike = () => {
   }
   return (
     <div className="w-full p-6 bg-white rounded-md flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">You May Also Like</h1>
+      <h1 className="text-2xl font-bold">{title}</h1>
       <div className="flex gap-4">
         <Carousel className="w-[85%] md:w-[90%] ml-6 sm:ml-8 md:ml-10">
           <CarouselContent>
