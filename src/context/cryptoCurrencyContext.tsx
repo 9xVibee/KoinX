@@ -1,10 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import React, {
-  Dispatch,
-  SetStateAction,
-  createContext,
-  useState,
-} from "react";
+import { Dispatch, SetStateAction, createContext, useState } from "react";
 
 interface CryptoCurrencyContextType {
   cryptoCurrency: string;
