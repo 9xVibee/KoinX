@@ -13,7 +13,7 @@ const RightSection = () => {
           With our range of features that you can equip for free, KoinX allows
           you to be more educated and aware of your tax reports.
         </p>
-        <img src={market} alt="market" className="w-44" />
+        <img src={market} alt="market" className="w-44" loading="lazy" />
         <button className="flex items-center gap-2 bg-white text-black px-4 py-1.5 rounded-md font-semibold">
           Get Started for FREE <MoveRight className="size-4" />
         </button>
