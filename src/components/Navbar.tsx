@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="w-full flex bg-white overflow-hidden py-4 px-2 sm:px-8 md:px-10 justify-between items-center shadow-md">
       {/* left */}
-      <div>logo</div>
+      <div className="text-2xl font-semibold">KoinX</div>
       {/* right */}
       <div className="flex font-semibold gap-8 items-center max-md:hidden">
         <p className="cursor-pointer">Crypto Taxes</p>
