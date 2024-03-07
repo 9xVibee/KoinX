@@ -70,7 +70,7 @@ type CardType = {
 const Card = ({ img, name, designation, bio }: CardType) => {
   return (
     <>
-      <div className="flex max-md:flex-col gap-5 items-center bg-blue-100 rounded-lg p-4">
+      <div className="flex max-md:flex-col gap-4 items-center bg-blue-100 rounded-lg p-4">
         <div className="flex flex-col items-center flex-shrink-0">
           <img src={img} alt="" className="w-24 rounded-md" />
           <p className="font-semibold mt-2">{name}</p>
