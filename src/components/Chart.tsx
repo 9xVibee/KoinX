@@ -1,8 +1,8 @@
 /* eslint-disable react-refresh/only-export-components */
 // TradingViewWidget.tsx
-import { useEffect, useRef, memo } from "react";
+import { useEffect, useRef } from "react";
 
-function Chart() {
+const Chart = () => {
   const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -54,6 +54,6 @@ function Chart() {
       </div>
     </div>
   );
-}
+};
 
-export default memo(Chart);
+export default Chart;
