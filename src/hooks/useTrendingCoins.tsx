@@ -9,6 +9,7 @@ type TrendingCoins = {
   large: string;
   data: {
     price: string;
+    sparkline: string;
   };
 };
 
@@ -16,7 +17,7 @@ const useTrendingCoins = () => {
   const [loading, setLoading] = useState(true);
   const [trendingCoins, setTrendingCoins] = useState<TrendingCoins[]>([]);
 
-  const getTopThreeTrendingCoins = async () => {
+  const getTopThreeTrendingCoins = async (numberOfDataWants: string) => {
     setLoading(true);
 
     try {
@@ -25,12 +26,17 @@ const useTrendingCoins = () => {
       );
 
       const data = await res.json();
-      const topThreeCoins = data.coins.slice(0, 3)?.map((item: any) => {
-        return { ...item?.item };
-      });
 
+      if (numberOfDataWants == "three") {
+        const topThreeCoins = data.coins.slice(0, 3)?.map((item: any) => {
+          return { ...item?.item };
+        });
+
+        setTrendingCoins(topThreeCoins);
+      } else {
+        setTrendingCoins(data.coins?.map((item: any) => item?.item));
+      }
       setLoading(false);
-      setTrendingCoins(topThreeCoins);
     } catch (error) {
       console.log("Error");
     }

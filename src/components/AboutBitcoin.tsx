@@ -21,7 +21,7 @@ const AboutBitcoin = () => {
   const { cryptoCurrency } = useContext(cryptoCurrencyContext);
 
   return (
-    <div className="w-full p-6 bg-white rounded-md flex flex-col gap-5">
+    <div className="w-full p-2 md:p-6 bg-white rounded-md flex flex-col gap-5">
       <h1 className="text-2xl font-bold">About {cryptoCurrency}</h1>
       <div className="flex flex-col border-b-2 pb-4">
         <h1 className="font-bold text-xl">What is {cryptoCurrency}</h1>
@@ -73,7 +73,7 @@ const AboutBitcoin = () => {
       </div>
       <div className="flex flex-col border-b-2 pb-4 gap-4">
         <h1 className="font-bold text-xl">Already holding {cryptoCurrency}?</h1>
-        <div className="w-full flex gap-12">
+        <div className="w-full flex max-md:flex-col gap-4 md:gap-12">
           {cardData.map((item) => {
             return (
               <AboutBitcoinCard

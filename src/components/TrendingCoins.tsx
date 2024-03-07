@@ -6,7 +6,7 @@ const TrendingCoins = () => {
     useTrendingCoins();
 
   useEffect(() => {
-    getTopThreeTrendingCoins();
+    getTopThreeTrendingCoins("three");
   }, []);
 
   if (loading) return <h1>Loading...</h1>;

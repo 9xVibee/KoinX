@@ -27,10 +27,10 @@ const Sentiment = () => {
       <div className="w-full flex items-center -mt-8">
         <Carousel className="w-[85%] md:w-[90%] ml-1 sm:ml-8 md:ml-10 mt-10">
           <CarouselContent>
-            {iconsArr.map((item, idx) => {
+            {iconsArr.map((item) => {
               return (
                 <CarouselItem className="md:basis-1/2">
-                  <Card Icon={item.icon} key={idx} bg={item.bg} />
+                  <Card Icon={item.icon} key={item.bg} bg={item.bg} />
                 </CarouselItem>
               );
             })}
@@ -47,9 +47,9 @@ const Sentiment = () => {
           <p className="text-green-700 font-semibold text-3xl">76%</p>
         </div>
         <div className="w-[70%] sm:w-[80%] flex flex-col gap-2">
-          <BarInSentiment color="green" percentage={76} title="Buy" />
-          <BarInSentiment color="gray" percentage={8} title="Hold" />
-          <BarInSentiment color="red" percentage={16} title="Sell" />
+          <BarInSentiment key={1} color="green" percentage={76} title="Buy" />
+          <BarInSentiment key={2} color="gray" percentage={8} title="Hold" />
+          <BarInSentiment key={3} color="red" percentage={16} title="Sell" />
         </div>
       </div>
     </div>

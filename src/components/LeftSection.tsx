@@ -3,6 +3,7 @@ import Chart from "./Chart";
 import MiniNav from "./MiniNav";
 import Performance from "./Performance";
 import Sentiment from "./Sentiment";
+import YouMayAlsoLike from "./YouMayAlsoLike";
 
 const LeftSection = () => {
   return (
@@ -12,6 +13,7 @@ const LeftSection = () => {
       <Performance />
       <Sentiment />
       <AboutBitcoin />
+      <YouMayAlsoLike />
     </div>
   );
 };
