@@ -1,3 +1,4 @@
+import AboutBitcoin from "./AboutBitcoin";
 import Chart from "./Chart";
 import MiniNav from "./MiniNav";
 import Performance from "./Performance";
@@ -10,6 +11,7 @@ const LeftSection = () => {
       <MiniNav />
       <Performance />
       <Sentiment />
+      <AboutBitcoin />
     </div>
   );
 };
